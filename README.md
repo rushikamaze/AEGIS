@@ -1,9 +1,9 @@
 # AEGIS
 A Heart Disease Prediction System is a diagnostic tool or software that leverages data-driven techniques to assess the likelihood of an individual developing heart-related conditions. Such systems are valuable in early diagnosis, risk assessment, and preventive care.
-Benefits: Early Detection: Identifies individuals at risk before symptoms appear.
-          Personalized Care: Tailored lifestyle and treatment recommendations.
-          Cost-Effective: Reduces expensive diagnostic tests and hospital visits.
-          Data-Driven Insights: Improves understanding of heart disease risk factors.
+Benefits: 1. Early Detection: Identifies individuals at risk before symptoms appear.
+          2. Personalized Care: Tailored lifestyle and treatment recommendations.
+          3. Cost-Effective: Reduces expensive diagnostic tests and hospital visits.
+          4. Data-Driven Insights: Improves understanding of heart disease risk factors.
 
 1. Core Computer Science (CS) Branch: Algorithms and Data Structures, Machine Learning (ML) and Artificial Intelligence (AI), Software Development, Database Management. 
 2. Cloud Computing Branch: Data Storage and Scalability, Distributed Computing, Real-Time Analytics, Security and Compliance.
