@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction Platform</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="landing-style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <i class='bx bx-heart'></i>
+                <span>Aegis</span>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item active" data-page="home">
+                    <i class='bx bx-home'></i>
+                    <span>Home</span>
+                </li>
+                <li class="nav-item" data-page="user">
+                    <i class='bx bx-user'></i>
+                    <span>User Profile</span>
+                </li>
+                <li class="nav-item" data-page="predict">
+                    <i class='bx bx-heart'></i>
+                    <span>Prediction</span>
+                </li>
+                <li class="nav-item logout">
+                    <i class='bx bx-log-out'></i>
+                    <span>Logout</span>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <!-- Home Page -->
+            <section id="home" class="page active">
+                <h1>Welcome to Aegis</h1>
+                <div class="about-section">
+                    <h2>About Us</h2>
+                    <p>Aegis is an advanced platform designed to help individuals assess their heart disease risk using machine learning technology. Our mission is to provide early insights into potential cardiovascular health challenges.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class='bx bx-shield-quarter'></i>
+                            <h3>Accurate Predictions</h3>
+                            <p>Utilizing state-of-the-art machine learning algorithms to predict heart disease risk.</p>
+                        </div>
+                        <div class="feature">
+                            <i class='bx bx-data'></i>
+                            <h3>Comprehensive Analysis</h3>
+                            <p>Analyze multiple health parameters to provide comprehensive risk assessment.</p>
+                        </div>
+                        <div class="feature">
+                            <i class='bx bx-lock'></i>
+                            <h3>Data Privacy</h3>
+                            <p>Your personal health information is kept strictly confidential and secure.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- User Profile Page -->
+            <section id="user" class="page">
+                <h1>User Profile</h1>
+                <div class="profile-container">
+                    <div class="profile-header">
+                        <i class='bx bx-user-circle'></i>
+                        <h2 id="username">John Doe</h2>
+                        <p id="email">john.doe@example.com</p>
+                    </div>
+                    <div class="profile-details">
+                        <div class="detail">
+                            <span>Age:</span>
+                            <p id="user-age">35</p>
+                        </div>
+                        <div class="detail">
+                            <span>Gender:</span>
+                            <p id="user-gender">Male</p>
+                        </div>
+                        <div class="detail">
+                            <span>Last Prediction:</span>
+                            <p id="last-prediction">Low Risk (12/01/2024)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Prediction Page -->
+            <section id="predict" class="page">
+                <h1>Heart Disease Risk Prediction</h1>
+                <form id="prediction-form">
+                    <div class="input-grid">
+                        <div class="input-box">
+                            <label>Age</label>
+                            <input type="number" placeholder="Enter Age" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Sex</label>
+                            <select required>
+                                <option value="">Select Gender</option>
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label>Chest Pain Type</label>
+                            <select required>
+                                <option value="">Select Chest Pain</option>
+                                <option value="0">Typical Angina</option>
+                                <option value="1">Atypical Angina</option>
+                                <option value="2">Non-Anginal Pain</option>
+                                <option value="3">Asymptomatic</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label>Resting Blood Pressure</label>
+                            <input type="number" placeholder="mmHg" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Cholesterol</label>
+                            <input type="number" placeholder="mg/dl" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Fasting Blood Sugar</label>
+                            <select required>
+                                <option value="">Select</option>
+                                <option value="1">> 120 mg/dl</option>
+                                <option value="0">≤ 120 mg/dl</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Predict Risk</button>
+                </form>
+                <div id="prediction-result" class="result-container"></div>
+            </section>
+        </main>
+    </div>
+    <script src="landing-script.js"></script>
+</body>
+</html>
